@@ -1,7 +1,5 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
+{%extends 'layouts.html'%}
+{%block content%}
 <!doctype html>
 <html lang="en">
   <head>
@@ -21,81 +19,7 @@ Author URL: http://w3layouts.com
   </head>
   <body>
 <!--header-->
-<header id="site-header" class="fixed-top">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark stroke">
-      <h1>
-        <a class="navbar-brand" href="/index">
-          <span class="fa fa-diamond"></span>Study Course <span class="logo">Journey to success</span></a>
-      </h1>
 
-      <!-- if logo is image enable this   
-        <a class="navbar-brand" href="#index.html">
-            <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-        </a> -->
-      <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-        </span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mx-lg-auto">
-          <li class="nav-item @@home__active">
-            <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item @@about__active">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/courses">Courses</a>
-          </li>
-          <li class="nav-item @@contact__active">
-            <a class="nav-link" href="/contact">Contact</a>
-          </li>
-        </ul>
-
-        <!--/search-right-->
-        <div class="search-right">
-          <a href="#search" title="search"><span class="fa fa-search" aria-hidden="true"></span></a>
-          <!-- search popup -->
-          <div id="search" class="pop-overlay">
-            <div class="popup">
-
-              <form action="error.html" method="GET" class="search-box">
-                <input type="search" placeholder="Search" name="search" required="required" autofocus="">
-                <button type="submit" class="btn"><span class="fa fa-search" aria-hidden="true"></span></button>
-              </form>
-
-            </div>
-            <a class="close" href="#close">×</a>
-          </div>
-          <!-- /search popup -->
-        </div>
-        <div class="top-quote mr-lg-2 text-center">
-          <a href="#login" class="btn login mr-2"><span class="fa fa-user"></span> login</a>
-        </div>
-      </div>
-      <!-- toggle switch for light and dark theme -->
-      <div class="mobile-position">
-        <nav class="navigation">
-          <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox">
-              <div class="mode-container py-1">
-                <i class="gg-sun"></i>
-                <i class="gg-moon"></i>
-              </div>
-            </label>
-          </div>
-        </nav>
-      </div>
-      <!-- //toggle switch for light and dark theme -->
-    </nav>
-  </div>
-</header>
 <!--/header-->
 <!-- about breadcrumb -->
 <section class="w3l-breadcrumb">
@@ -221,6 +145,10 @@ Author URL: http://w3layouts.com
                         </div>
                     </div>
                 </div>
+
+
+
+                
 
                 <div class="col-lg-4 col-md-6 item mt-lg-0 mt-5">
                     <div class="card">
@@ -372,6 +300,8 @@ Author URL: http://w3layouts.com
                     </div>
                 </div>
 
+
+
                 <div class="col-lg-4 col-md-6 item mt-5 pt-lg-2">
                     <div class="card">
                         <div class="card-header p-0 position-relative">
@@ -419,6 +349,106 @@ Author URL: http://w3layouts.com
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 item mt-5 pt-lg-2">
+                  <div class="card">
+                      <div class="card-header p-0 position-relative">
+                          <a href="#course-single" class="zoom d-block">
+                              <img class="card-img-bottom d-block" src="../static/assets/images/c6.jpg"
+                                  alt="Card image cap">
+                          </a>
+                          <div class="course-price-badge-new"> New</div>
+                      </div>
+                      <div class="card-body course-details">
+                          <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                              <p>$49.00</p>
+                              <ul class="rating-star">
+                                  <li><span class="fa fa-star"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                                  <li><span class="fa fa-star-o"></span></li>
+                              </ul>
+                          </div>
+                          <a href="#course-single" class="course-desc">Learn Master JQuery in a Short Period of Time</a>
+                          <div class="course-meta mt-4">
+                              <div class="meta-item course-lesson">
+                                  <span class="fa fa-clock-o"></span>
+                                  <span class="meta-value"> 20 hrs </span>
+                              </div>
+                              <div class="meta-item course-">
+                                  <span class="fa fa-user-o"></span>
+                                  <span class="meta-value"> 50 </span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-footer">
+                          <div class="author align-items-center">
+                              <img src="../static/assets/images/a2.jpg" alt="" class="img-fluid rounded-circle">
+                              <ul class="blog-meta">
+                                  <li>
+                                      <span class="meta-value mx-1">by</span> <a href="#author"> Isabella</a>
+                                  </li>
+                                  <li>
+                                      <span class="meta-value mx-1">in</span> <a href="#author"> Teaching</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 item mt-5 pt-lg-2">
+                <div class="card">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#course-single" class="zoom d-block">
+                            <img class="card-img-bottom d-block" src="../static/assets/images/c5.jpg"
+                                alt="Card image cap">
+                        </a>
+                        <div class="course-price-badge"> Free</div>
+                        <div class="post-pos">
+                            <a href="#reciepe" class="receipe blue">Beginner</a>
+                        </div>
+                    </div>
+                    <div class="card-body course-details">
+                        <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                            <p>$0.00</p>
+                            <ul class="rating-star">
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star-o"></span></li>
+                            </ul>
+                        </div>
+                        <a href="#course-single" class="course-desc">Learning to Write as a clean Professional
+                            Author</a>
+                        <div class="course-meta mt-4">
+                            <div class="meta-item course-lesson">
+                                <span class="fa fa-clock-o"></span>
+                                <span class="meta-value"> 20 hrs </span>
+                            </div>
+                            <div class="meta-item course-">
+                                <span class="fa fa-user-o"></span>
+                                <span class="meta-value"> 50 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="author align-items-center">
+                            <img src="../static/assets/images/a1.jpg" alt="" class="img-fluid rounded-circle">
+                            <ul class="blog-meta">
+                                <li>
+                                    <span class="meta-value mx-1">by</span> <a href="#author"> Olivia</a>
+                                </li>
+                                <li>
+                                    <span class="meta-value mx-1">in</span> <a href="#author"> Programing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             </div>
             <!-- pagination -->
             <div class="pagination-wrapper mt-5 pt-lg-3 text-center">
@@ -436,88 +466,7 @@ Author URL: http://w3layouts.com
     </div>
 </section>
 <!-- footer -->
-<section class="w3l-footer-29-main">
-  <div class="footer-29 py-5">
-    <div class="container py-md-4">
-      <div class="row footer-top-29">
-        <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
-          <h6 class="footer-title-29">Contact Info </h6>
-          <p>Address : Study course, 343 marketing, #2214 cravel street, NY - 62617.</p>
-          <p class="my-2">Phone : <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a></p>
-          <p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
-          <div class="main-social-footer-29 mt-4">
-            <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
-            <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
-            <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-            <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
 
-          <ul>
-            <h6 class="footer-title-29">Company</h6>
-            <li><a href="about.html">About company</a></li>
-            <li><a href="#blog"> Latest Blog posts</a></li>
-            <li><a href="#teacher"> Became a teacher </a></li>
-            <li><a href="courses.html">Online Courses</a></li>
-            <li><a href="contact.html">Get in touch</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
-          <h6 class="footer-title-29">Programs</h6>
-          <ul>
-            <li><a href="#traning">Training Center</a></li>
-            <li><a href="#documentation">Documentation</a></li>
-            <li><a href="#release">Release Status</a></li>
-            <li><a href="#customers"> Customers</a></li>
-            <li><a href="#helpcenter"> Help Center</a></li>
-          </ul>
-
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
-          <h6 class="footer-title-29">Suppport</h6>
-          <a href="#playstore"><img src="../static/assets/images/googleplay.png" class="img-responsive" alt=""></a>
-          <a href="#appstore"><img src="../static/assets/images/appstore.png" class="img-responsive mt-3" alt=""></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- copyright -->
-  <section class="w3l-copyright text-center">
-    <div class="container">
-      <p class="copy-footer-29">© 2020 Study Course. All rights reserved. Design by <a href="https://w3layouts.com/"
-          target="_blank">
-          W3Layouts</a></p>
-    </div>
-
-    <!-- move top -->
-    <button onclick="topFunction()" id="movetop" title="Go to top">
-      &#10548;
-    </button>
-    <script>
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction()
-      };
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("movetop").style.display = "block";
-        } else {
-          document.getElementById("movetop").style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <!-- /move top -->
-  </section>
-  <!-- //copyright -->
-</section>
 <!-- //footer -->
 
 <!-- Template JavaScript -->
@@ -640,3 +589,4 @@ Author URL: http://w3layouts.com
 </body>
 
 </html>
+{%endblock%}

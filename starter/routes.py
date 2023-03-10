@@ -34,7 +34,9 @@ def courses():
 def contact():
   return render_template("contact.html")
 
-
+@app.route('/layouts')
+def layouts():
+  return render_template("layouts.html")
 
 
 
