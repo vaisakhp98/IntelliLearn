@@ -42,6 +42,10 @@ def layouts():
 def singleCourse():
   return render_template("singleCourse.html")
 
+@app.route('/login')
+def login():
+  return render_template("login.html")
+
 
 
 
@@ -60,27 +64,27 @@ def register():
  return render_template("register.html")
 
 
-@app.route('/login',methods=['GET','POST'])
-def login():
- if request.method=="POST":
-    email=request.form['email']
-    password=request.form['password']
-    admin =Register.query.filter_by(email=email, password=password,usertype= 'admin').first()
-    user =Register.query.filter_by(email=email, password=password,usertype= 'user').first()
+# @app.route('/login',methods=['GET','POST'])
+# def login():
+#  if request.method=="POST":
+#     email=request.form['email']
+#     password=request.form['password']
+#     admin =Register.query.filter_by(email=email, password=password,usertype= 'admin').first()
+#     user =Register.query.filter_by(email=email, password=password,usertype= 'user').first()
 
- if admin:
-  login_user(admin)
-  next_page = request.args.get('next')
-  return redirect(next_page) if next_page else redirect('/admin_index') 
+#  if admin:
+#   login_user(admin)
+#   next_page = request.args.get('next')
+#   return redirect(next_page) if next_page else redirect('/admin_index') 
  
- elif user:
+#  elif user:
 
-  login_user(user)
-  next_page = request.args.get('next')
-  return redirect(next_page) if next_page else redirect('/user_index') 
+#   login_user(user)
+#   next_page = request.args.get('next')
+#   return redirect(next_page) if next_page else redirect('/user_index') 
 
- else:
-  d="Invalid Username or Password!"
-  return render_template("login.html",d=d)
- return render_template("login.html")
+#  else:
+#   d="Invalid Username or Password!"
+#   return render_template("login.html",d=d)
+#  return render_template("login.html")
 
