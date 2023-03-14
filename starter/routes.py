@@ -38,6 +38,11 @@ def contact():
 def layouts():
   return render_template("layouts.html")
 
+@app.route('/singleCourse')
+def singleCourse():
+  return render_template("singleCourse.html")
+
+
 
 
 @app.route('/register',methods=['GET','POST'])

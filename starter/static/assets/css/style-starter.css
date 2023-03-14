@@ -12329,3 +12329,40 @@ span.plus {
 /* /contact1 */
 
 /*# sourceMappingURL=style-starter.css.map */
+.registerMain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+}
+.registerNameInput{
+  width: 150%;
+  padding: 8px;
+  border-radius: 5px;
+}
+.registerText{
+  position: relative;
+  left: 60px;
+  
+}
+.registerName{
+  margin-top: 15px;
+}
+.options{
+  width: 150%;
+}
+.registerSubmit{
+  margin-top: 15px;
+  width: 23.5%;
+  position: relative;
+  left: 58px;
+  padding: 8px;
+  background-color: #e83e8c;
+  border-radius: 5px;
+}
+.registerSubmit:hover {
+  background-color: #e41c79;
+  cursor: pointer;
+}
