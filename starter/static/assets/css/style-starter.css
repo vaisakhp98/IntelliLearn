@@ -12366,3 +12366,18 @@ span.plus {
   background-color: #e41c79;
   cursor: pointer;
 }
+.ImageandBtn{
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid white;
+  margin: 20px;
+}
+.applyButton{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.durationAndOther{
+  display: flex;
+  justify-content: space-around;
+}
