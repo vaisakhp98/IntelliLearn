@@ -12342,14 +12342,15 @@ span.plus {
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
+  background-color: var(--bg-grey);
 }
 .RInput{
-  border-radius: 3px;
+
+  border-radius: 50px;
   border: none;
-  padding: 5px;
-  margin-top: -8px;
+  padding: 12px;
+  margin-top: 8px;
   margin-bottom: 10px;
-}
-.regRight{
- 
+  background:var(--bg-color);
+  color:white;
 }
