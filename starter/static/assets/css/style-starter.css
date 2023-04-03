@@ -12357,6 +12357,7 @@ span.plus {
 
 .singleCoursePageParentDiv{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 30px;
   background-color: var(--bg-grey);
@@ -12401,4 +12402,21 @@ span.plus {
   border-radius: 20px;
   padding: 10px;
   border: none;
+}
+.cousreDescripiton{
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.singleSyllabus{
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.singleSyllabusMain{
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
 }
