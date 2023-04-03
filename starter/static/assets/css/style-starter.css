@@ -12338,14 +12338,14 @@ span.plus {
 .registerMain{
   display: flex;
   flex-direction: column;
-  border: 2px solid white;
+  width: 50%;
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
   background-color: var(--bg-grey);
 }
 .RInput{
-
+  width: 100%;
   border-radius: 50px;
   border: none;
   padding: 12px;
@@ -12353,4 +12353,52 @@ span.plus {
   margin-bottom: 10px;
   background:var(--bg-color);
   color:white;
+}
+
+.singleCoursePageParentDiv{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  background-color: var(--bg-grey);
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+.topSingleCourseSection{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+
+.topSingleCourseSection-image{
+  text-align: center;
+  width: 40%;
+}
+
+.topSingleCourseSection-details{
+  margin-left: 30px;
+  width: 60%;
+}
+.topSingleCoursePlan{
+
+}
+.topSingleCoursePlanPrice{
+  padding: 10px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 20%;
+  margin-right: 20px;
+}
+
+.topSingleCoursePlanPrice:hover{
+  cursor: pointer;
+}
+
+.buyButton{
+  width: 66%;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
 }
