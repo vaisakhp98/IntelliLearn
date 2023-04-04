@@ -12421,3 +12421,15 @@ span.plus {
   display: flex;
   align-items: center;
 }
+.loggedDivMain{
+  margin: 50px;
+}
+.loggedindetails{
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

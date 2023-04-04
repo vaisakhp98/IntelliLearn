@@ -46,6 +46,9 @@ def singleCourse():
 def login():
   return render_template("login.html")
 
+@app.route('/loggedin')
+def loggedin():
+  return render_template("loggedin.html")
 
 
 
