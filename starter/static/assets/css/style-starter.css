@@ -12433,3 +12433,21 @@ span.plus {
   justify-content: space-around;
   align-items: center;
 }
+.classSubParent{
+  width: 100%;
+
+  background-color: var(--bg-grey);
+  border-radius: 10px;
+}
+.classSubVideo{
+  width: 100%;
+  min-height: 10em;
+}
+.nextChapBtn{
+  margin-top: 5px;
+  border: none;
+  border-radius: 25px;
+  font-size: small;
+  background-color: transparent;
+  color: white;
+}

@@ -50,6 +50,10 @@ def login():
 def loggedin():
   return render_template("loggedin.html")
 
+@app.route('/classSub')
+def classSub():
+  return render_template("classSub.html")
+
 
 
 @app.route('/register',methods=['GET','POST'])
