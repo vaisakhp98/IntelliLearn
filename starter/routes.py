@@ -55,6 +55,12 @@ def classSub():
   return render_template("classSub.html")
 
 
+@app.route('/payGateway')
+def payGateway():
+  return render_template("payGateway.html")
+
+
+
 
 @app.route('/register',methods=['GET','POST'])
 def register():

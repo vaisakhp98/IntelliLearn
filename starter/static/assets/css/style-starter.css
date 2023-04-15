@@ -12451,3 +12451,6 @@ span.plus {
   background-color: transparent;
   color: white;
 }
+.selectedPrice{
+  background-color: lightgreen;
+}
