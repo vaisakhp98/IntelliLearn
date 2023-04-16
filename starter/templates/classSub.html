@@ -51,10 +51,37 @@
     </div>
     <div>
        
-        <button style="width: 100%; border: none; border-radius: 25px;
+        <button onclick="askQuestion()" style="width: 100%; border: none; border-radius: 25px;
          padding: 10px; margin-top: 30px;">  Ask Question</button>
 
     </div>
+
+    <div class = "chatBox" id="chatBox">
+          <div class="chatHead">
+            <div style="margin-left: 10px;">Nikita Sashta</div>
+            <button onclick="closeChat()" style="border: none;">X</button>
+          </div>
+          <div class="chatBody"> 
+            
+          </div>
+          <div class="ChatInput">
+            
+            <input class="chatBoxInp" type="text" placeholder="type here" id="typing"/>
+            <div style="display: flex;">
+              <button style="width: 100%;
+              padding: 5px;border: none;
+              background-color: aquamarine;
+              ">send</button>
+
+              <i onclick="camera()" id="camera" style="width: 25%; display: flex;
+               justify-content: center; 
+               align-items: center;" class="fa fa-camera"></i>
+            </div>
+            
+          </div>
+    </div>
+
+    <video id="video" autoplay="true" class="video"></video>
 </div>
 
 <!-- middle -->
@@ -181,6 +208,31 @@
       }
     });
   });
+</script>
+
+<script>
+  function closeChat(){
+    document.getElementById("chatBox").style.display = "none"
+
+    document.getElementById("video").style.display = "none"
+  }
+
+  function askQuestion(){
+    document.getElementById("chatBox").style.display = "flex"
+  }
+
+  function camera(){
+    let video = document.getElementById("video")
+    if (navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({
+        video:true
+      }).then(function(s){
+        video.srcObject=s;
+      })
+    }else{
+      console.log("no cam access");
+    }
+  }
 </script>
 <!--//MENU-JS-->
 

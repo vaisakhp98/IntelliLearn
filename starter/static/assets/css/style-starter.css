@@ -12454,3 +12454,45 @@ span.plus {
 .selectedPrice{
   background-color: lightgreen;
 }
+
+.chatBox{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  margin-top: 10px;
+  position: sticky;
+  bottom: 5px;
+}
+.chatHead{
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  width: 30%;
+  padding: 8px;
+  border-radius: 5px 5px 0px 0px;
+}
+.chatBody{
+  width: 30%;
+  height: 15em;
+  background-color: lightblue;
+}
+.ChatInput{
+    width: 30%;
+    background-color: #007bff;
+}
+.chatBoxInp{
+width: 100%;
+border: none;
+padding: 5px;
+}
+.video{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 250px;
+  border-radius: 10px;
+}
