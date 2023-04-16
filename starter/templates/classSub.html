@@ -215,7 +215,20 @@
     document.getElementById("chatBox").style.display = "none"
 
     document.getElementById("video").style.display = "none"
+    
+    let video = document.getElementById("video")
+    if (navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({
+        video:false
+      }).then(function(s){
+        video.srcObject=s;
+      })
+    }else{
+      console.log("no cam access");
+    }
   }
+
+  
 
   function askQuestion(){
     document.getElementById("chatBox").style.display = "flex"
