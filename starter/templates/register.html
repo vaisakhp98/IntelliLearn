@@ -28,38 +28,46 @@
         <div class="blog pb-5" id="courses">
             <div class="registerContainer">
               <h2>Sign Up</h2>
-              <div class="registerMain">
+              <form class="registerMain" method="post">
+          
                 <br>
                   <div class="regLeft">
                     <!-- <label for="name">Name :</label><br> -->
-                    <input class="RInput" type="text" placeholder="Name" />
+                    <input name="name" class="RInput" type="text" placeholder="Name" />
                       <br>
                     <!-- <label for="name">Phone :</label><br> -->
-                    <input class="RInput" type="number" placeholder="Phone" />
+                    <input name="contact" class="RInput" type="number" placeholder="Phone" />
                       <br>
           
                     <!-- <label for="name">Teacher or Student:</label><br> -->
-                    <input class="RInput" type="email" placeholder="Email" />
+                    <input name="email" class="RInput" type="email" placeholder="Email" />
                    <br>
                   </div>
 
                   <div class="regRight">
                     <!-- <label for="name">Address :</label><br> -->
-                    <input class="RInput" type="text" placeholder="Address" />
+                    <input name="address" class="RInput" type="text" placeholder="Address" />
                       <br>
                     <!-- <label for="name">Age :</label><br> -->
-                    <input class="RInput" type="number" placeholder="Age" />
+                    <input name="age" class="RInput" type="number" placeholder="Age" />
                       <br>
-                    <!-- <label for="name">Disability If any :</label><br> -->
-                    <input class="RInput" type="text" placeholder="Disability" />
 
-                   
+                      
+                    <!-- <label for="name">Disability If any :</label><br> -->
+                    <input name="disability" class="RInput" type="text" placeholder="Disability" />
+                    <label>Eg:- Deaf / Mute</label>
+                    
+                    <input name="password" class="RInput" type="password" placeholder="Password" />
+                    <br>
+
+  
                   </div>
                  
            
-                  <button class="" style="border: none; border-radius: 3px; background-color: #fe5388; padding: 12px; border-radius: 50px;">Submit</button>
+                  <button type="submit" class="" style="border: none; border-radius: 3px; background-color: #fe5388; padding: 12px; border-radius: 50px;">Submit</button>
                   <button style="margin-top: 5px; border-radius: 3px; border: none; background-color: #fdfdfd; padding: 12px; border-radius: 50px;">Clear</button>
-              </div>
+    
+            </form>
             </div>
         </div>
     </section>

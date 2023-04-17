@@ -12496,3 +12496,12 @@ padding: 5px;
   left: 250px;
   border-radius: 10px;
 }
+.rDesignation{
+  padding: 5px;
+  border-radius: 25px;
+  width: 20%;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: white;
+
+}

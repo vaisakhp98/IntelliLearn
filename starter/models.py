@@ -14,6 +14,8 @@ class Register(db.Model, UserMixin):
  password = db.Column(db.String(80))
  usertype = db.Column(db.String(80))
  name = db.Column(db.String(80))
+ age = db.Column(db.Integer)
+ disability = db.Column(db.String(80))
  contact = db.Column(db.String(80))
  address = db.Column(db.String(80))
  status = db.Column(db.String(80),default='NULL')

@@ -70,34 +70,52 @@ def register():
     password = request.form['password']
     address= request.form['address']
     contact= request.form['contact'] 
-    my_data = Register(name=name,email=email,password=password,contact=contact,address=address,usertype="user")
+    age= request.form['age'] 
+    disability = request.form['disability']
+    my_data = Register(name=name,email=email,password=password,contact=contact,address=address,disability=disability,age=age,usertype="student")
     db.session.add(my_data) 
     db.session.commit()
     return redirect('/login')
  return render_template("register.html")
 
 
-# @app.route('/login',methods=['GET','POST'])
-# def login():
-#  if request.method=="POST":
-#     email=request.form['email']
-#     password=request.form['password']
-#     admin =Register.query.filter_by(email=email, password=password,usertype= 'admin').first()
-#     user =Register.query.filter_by(email=email, password=password,usertype= 'user').first()
+@app.route('/login',methods=['GET','POST'])
+def login():
+ if request.method=="POST":
+    email=request.form['email']
+    password=request.form['password']
+    admin =Register.query.filter_by(email=email, password=password,usertype= 'admin').first()
+    student =Register.query.filter_by(email=email, password=password,usertype= 'student').first()
+    teacher =Register.query.filter_by(email=email, password=password,usertype= 'teacher').first()
+    institute =Register.query.filter_by(email=email, password=password,usertype= 'institute').first()
 
-#  if admin:
-#   login_user(admin)
-#   next_page = request.args.get('next')
-#   return redirect(next_page) if next_page else redirect('/admin_index') 
+    if admin:
+      login_user(admin)
+      next_page = request.args.get('next')
+      return redirect(next_page) if next_page else redirect('/admin_index') 
+    
+    elif student:
+
+      login_user(student)
+      next_page = request.args.get('next')
+      return redirect(next_page) if next_page else redirect('/student_index') 
+
+    elif teacher:
+
+      login_user(teacher)
+      next_page = request.args.get('next')
+      return redirect(next_page) if next_page else redirect('/teacher_index')
+
+    elif institute:
+
+      login_user(institute)
+      next_page = request.args.get('next')
+      return redirect(next_page) if next_page else redirect('/institute_index') 
  
-#  elif user:
 
-#   login_user(user)
-#   next_page = request.args.get('next')
-#   return redirect(next_page) if next_page else redirect('/user_index') 
 
-#  else:
-#   d="Invalid Username or Password!"
-#   return render_template("login.html",d=d)
-#  return render_template("login.html")
+    else:
+      d="Invalid Username or Password!"
+      return render_template("login.html",d=d)
+ return render_template("login.html")
 
