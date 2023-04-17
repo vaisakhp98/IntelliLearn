@@ -1,4 +1,4 @@
-{%extends 'layouts.html'%}
+{%extends 'institute_layouts.html'%}
 {%block content%}
 
 <!doctype html>
@@ -29,69 +29,8 @@
 <br>
 
 <div class="classSubParent p-4" >
-    <h3>Python For Begginers</h3>
-    <h6>University of Pensilvania</h6>
-    <br>
-    <div>
-        <iframe class="classSubVideo" height="500px"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
-    </div>
-    <div style="display: flex; justify-content: end;">
-        <button class="nextChapBtn">Next Chapter >></button>
-    </div>
-    <div>
-        <h3>What is Python and its Basics - - </h3>
-        <h6> DataTypes </h6>
-    </div>
-    <div style="margin-top: 10px;">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-        <br>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-    </div>
-    <div>
-       
-        <button onclick="askQuestion()" style="width: 100%; border: none; border-radius: 25px;
-         padding: 10px; margin-top: 30px;">  Ask Question</button>
-
-    </div>
-
-    <div class = "chatBox" id="chatBox">
-          <div class="chatHead">
-            <div style="margin-left: 10px;">Nikita Sashta</div>
-            <button onclick="closeChat()" style="border: none;">X</button>
-          </div>
-          <div class="chatBody"> 
-            
-          </div>
-          <div class="ChatInput">
-            
-            <input class="chatBoxInp" type="text" placeholder="type here" id="typing"/>
-            <div style="display: flex;">
-              <button style="width: 100%;
-              padding: 5px;border: none;
-              background-color: aquamarine;
-              ">send</button>
-
-              <i onclick="camera()" id="camera" style="width: 25%; display: flex;
-               justify-content: center; 
-               align-items: center;" class="fa fa-camera"></i>
-            </div>
-            
-          </div>
-    </div>
-
-    <video id="video" autoplay="true" class="video"></video>
+    <h3>Institute Index</h3>
 </div>
-
-<!-- middle -->
-
-<!-- //middle -->
-
-<!-- testimonials -->
-
-<!-- //testimonials -->
-
 
 
 
@@ -219,7 +158,7 @@
     let video = document.getElementById("video")
     if (navigator.mediaDevices.getUserMedia) {
       navigator.mediaDevices.getUserMedia({
-        video:true
+        video:false
       }).then(function(s){
         video.srcObject=s;
       })
@@ -255,5 +194,4 @@
 </body>
 
 </html>
-
 {%endblock%}

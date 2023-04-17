@@ -34,17 +34,23 @@ def courses():
 def contact():
   return render_template("contact.html")
 
+@app.route('/admin_layouts')
+def admin_layouts():
+  return render_template("admin_layouts.html")
+
+
 @app.route('/layouts')
 def layouts():
   return render_template("layouts.html")
+
 
 @app.route('/singleCourse')
 def singleCourse():
   return render_template("singleCourse.html")
 
-@app.route('/login')
-def login():
-  return render_template("login.html")
+# @app.route('/login')
+# def login():
+#   return render_template("login.html")
 
 @app.route('/loggedin')
 def loggedin():
@@ -60,6 +66,25 @@ def payGateway():
   return render_template("payGateway.html")
 
 
+
+@app.route('/admin_index')
+def admin_index():
+  return render_template("admin_index.html")
+
+
+@app.route('/institute_index')
+def institute_index():
+  return render_template("institute_index.html")
+
+
+@app.route('/student_index')
+def student_index():
+  return render_template("student_index.html")
+
+
+@app.route('/teacher_index')
+def teacher_index():
+  return render_template("teacher_index.html")
 
 
 @app.route('/register',methods=['GET','POST'])
