@@ -75,15 +75,32 @@ def admin_index():
 def admin_stud_table():
   return render_template("admin_stud_table.html")
 
+@app.route('/admin_teach_table')
+def admin_teach_table():
+  return render_template("admin_teach_table.html")
+
+@app.route('/admin_teach_info')
+def admin_teach_info():
+  return render_template("admin_teach_info.html")
+
 
 @app.route('/institute_index')
 def institute_index():
   return render_template("institute_index.html")
 
+@app.route('/admin_inst_table')
+def admin_inst_table():
+  return render_template("admin_inst_table.html")
+
+@app.route('/admin_inst_info')
+def admin_inst_info():
+  return render_template("admin_inst_info.html")
 
 @app.route('/student_index')
 def student_index():
   return render_template("student_index.html")
+
+
 
 @app.route('/admin_stud_info')
 def admin_stud_info():
