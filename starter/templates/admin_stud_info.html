@@ -1,0 +1,246 @@
+{%extends 'admin_layouts.html'%}
+{%block content%}
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Study Course - Education Category Bootstrap Responsive Template | Home : W3layouts</title>
+
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../static/assets/css/style-starter.css">
+    
+  </head>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #001359;
+    }
+    </style>
+  <body>
+<!--header-->
+<!--/header-->
+<!-- main-slider -->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="classSubParent p-4" >
+    <h3>Students Details</h3>
+    <div>
+        <label>Student Name </label>
+        <h5 style="background-color: #001359;padding: 6px; border-radius: 8px;">akshoash</h5>
+    </div>
+    <div>
+        <label>Email </label>
+        <h5 style="background-color: #001359;padding: 6px; border-radius: 8px;">akshoash</h5>
+    </div>
+    <div>
+        <label>Age</label>
+        <h5 style="background-color: #001359;padding: 6px; border-radius: 8px;">akshoash</h5>
+    </div>
+    <div>
+        <label>Contact </label>
+        <h5 style="background-color: #001359;padding: 6px; border-radius: 8px;">akshoash</h5>
+    </div>
+    <div>
+        <label>Adderess </label>
+        <h5 style="background-color: #001359;padding: 6px; border-radius: 8px;">akshoash</h5>
+    </div>
+    <div>
+        <label>Disability </label>
+        <h5 style="background-color: #001359;padding: 6px; border-radius: 8px;">akshoash</h5>
+    </div>
+    <div>
+        <label>Course </label>
+        <h5 style="background-color: #001359;padding: 6px; border-radius: 8px;">akshoash</h5>
+    </div>
+    
+</div>
+
+
+
+<!-- //footer -->
+
+<!-- Template JavaScript -->
+<script src="../static/assets/js/jquery-3.3.1.min.js"></script>
+
+<script src="../static/assets/js/theme-change.js"></script>
+
+<!-- stats number counter-->
+<script src="../static/assets/js/jquery.waypoints.min.js"></script>
+<script src="../static/assets/js/jquery.countup.js"></script>
+<script>
+  $('.counter').countUp();
+</script>
+<!-- //stats number counter -->
+
+<script src="../static/assets/js/owl.carousel.js"></script>
+<!-- script for banner slider-->
+<script>
+  $(document).ready(function () {
+    $('.owl-one').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      responsiveClass: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        480: {
+          items: 1
+        },
+        667: {
+          items: 1
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script -->
+
+<!-- script for tesimonials carousel slider -->
+<script>
+  $(document).ready(function () {
+      $("#owl-demo1").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: false,
+          responsiveClass: true,
+          responsive: {
+              0: {
+                  items: 1,
+                  nav: false
+              },
+              768: {
+                  items: 2,
+                  nav: false
+              },
+              1000: {
+                  items: 3,
+                  nav: false,
+                  loop: false
+              }
+          }
+      })
+  })
+</script>
+<!-- //script for tesimonials carousel slider -->
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+
+<script>
+  function closeChat(){
+    document.getElementById("chatBox").style.display = "none"
+
+    document.getElementById("video").style.display = "none"
+    
+    let video = document.getElementById("video")
+    if (navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({
+        video:false
+      }).then(function(s){
+        video.srcObject=s;
+      })
+    }else{
+      console.log("no cam access");
+    }
+  }
+
+  
+
+  function askQuestion(){
+    document.getElementById("chatBox").style.display = "flex"
+  }
+
+  function camera(){
+    let video = document.getElementById("video")
+    if (navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({
+        video:true
+      }).then(function(s){
+        video.srcObject=s;
+      })
+    }else{
+      console.log("no cam access");
+    }
+  }
+</script>
+<!--//MENU-JS-->
+
+<script src="../static/assets/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
+
+
+{%endblock%}

@@ -71,6 +71,10 @@ def payGateway():
 def admin_index():
   return render_template("admin_index.html")
 
+@app.route('/admin_stud_table')
+def admin_stud_table():
+  return render_template("admin_stud_table.html")
+
 
 @app.route('/institute_index')
 def institute_index():
@@ -80,6 +84,10 @@ def institute_index():
 @app.route('/student_index')
 def student_index():
   return render_template("student_index.html")
+
+@app.route('/admin_stud_info')
+def admin_stud_info():
+  return render_template("admin_stud_info.html")
 
 
 @app.route('/teacher_index')

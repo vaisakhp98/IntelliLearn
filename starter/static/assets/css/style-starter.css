@@ -12505,3 +12505,25 @@ padding: 5px;
   color: white;
 
 }
+.adminDashMain{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+ 
+}
+.adminDashTiles{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  height: 10em;
+  width: 18%;
+  padding: 20px;
+  background-color: lightblue;
+  margin-left: 3px;
+}
+.adminDashTiles:hover{
+  cursor: pointer;
+  background-color: mediumaquamarine;
+}
