@@ -1,4 +1,4 @@
-{%extends 'layouts.html'%}
+{%extends 'student_layouts.html'%}
 {%block content%}
 
 <!doctype html>
@@ -219,7 +219,7 @@
     let video = document.getElementById("video")
     if (navigator.mediaDevices.getUserMedia) {
       navigator.mediaDevices.getUserMedia({
-        video:true
+        video:false
       }).then(function(s){
         video.srcObject=s;
       })
