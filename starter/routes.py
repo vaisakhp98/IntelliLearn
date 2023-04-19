@@ -92,6 +92,10 @@ def institute_index():
 def admin_inst_table():
   return render_template("admin_inst_table.html")
 
+@app.route('/admin_req_table')
+def admin_req_table():
+  return render_template("admin_req_table.html")
+
 @app.route('/admin_inst_info')
 def admin_inst_info():
   return render_template("admin_inst_info.html")
