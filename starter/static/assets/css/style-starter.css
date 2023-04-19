@@ -12527,3 +12527,9 @@ padding: 5px;
   cursor: pointer;
   background-color: mediumaquamarine;
 }
+.TeachVideoOptions{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}

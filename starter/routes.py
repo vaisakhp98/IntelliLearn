@@ -115,6 +115,17 @@ def admin_stud_info():
 def teacher_index():
   return render_template("teacher_index.html")
 
+@app.route('/teach_req_table')
+def teach_req_table():
+  return render_template("teach_req_table.html")
+
+@app.route('/teach_stud_table')
+def teach_stud_table():
+  return render_template("teach_stud_table.html")
+
+@app.route('/teach_video')
+def teach_video():
+  return render_template("teach_video.html")
 
 @app.route('/register',methods=['GET','POST'])
 def register():
