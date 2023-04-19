@@ -104,6 +104,19 @@ def admin_inst_info():
 def student_index():
   return render_template("student_index.html")
 
+@app.route('/student_contact')
+def student_contact():
+  return render_template("student_contact.html")
+
+@app.route('/student_about')
+def student_about():
+  return render_template("student_about.html")
+
+@app.route('/student_courses')
+def student_courses():
+  return render_template("student_courses.html")
+
+
 
 
 @app.route('/admin_stud_info')
