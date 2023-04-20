@@ -88,6 +88,18 @@ def admin_teach_info():
 def institute_index():
   return render_template("institute_index.html")
 
+@app.route('/inst_assign')
+def inst_assign():
+  return render_template("inst_assign.html")
+
+@app.route('/inst_teach_table')
+def inst_teach_table():
+  return render_template("inst_teach_table.html")
+
+@app.route('/inst_stud_table')
+def inst_stud_table():
+  return render_template("inst_stud_table.html")
+
 @app.route('/admin_inst_table')
 def admin_inst_table():
   return render_template("admin_inst_table.html")
@@ -139,6 +151,10 @@ def teach_stud_table():
 @app.route('/teach_video')
 def teach_video():
   return render_template("teach_video.html")
+
+@app.route('/teach_inst_assign')
+def teach_inst_assign():
+  return render_template("teach_inst_assign.html")
 
 @app.route('/register',methods=['GET','POST'])
 def register():
